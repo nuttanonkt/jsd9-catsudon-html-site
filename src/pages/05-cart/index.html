@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script
+      src="https://kit.fontawesome.com/b10522ed86.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <img
+          src="../../assets/logo-vector-images/logo-navbar.png"
+          alt="brand logo"
+          width="154"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Health Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+      <div>
+        <i class="fa-solid fa-cart-shopping" aria-label="Shopping cart"></i>
+        <i class="fa-solid fa-bell" aria-label="Notifications"></i>
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Your Cart</h1>
+      <div class="layout">
+        <section class="cart">
+          <section class="cart__product">
+            <div class="image-container">
+              <img
+                src="../../assets/all-products-main-images/products-lists-images/clean/savory/001-grilled-lemon herb .jpeg"
+                alt=""
+              />
+            </div>
+            <section class="product__info">
+              <div>
+                <h2 class="product__name">
+                  Grilled Lemon Herb Chicken with Quinoa
+                </h2>
+                <p class="product__detail">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fuga, velit!
+                </p>
+              </div>
+              <p class="product__price">120 THB</p>
+              <div class="quantity-control">
+                <button class="button" aria-label="Increase product quantity">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <p class="quantity">1</p>
+                <button class="button" aria-label="Decrease  product quantity">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+            <span class="cart__actions">
+              <button class="button button-remove">
+                <i
+                  class="fa-solid fa-trash fa-xl"
+                  aria-label="Remove product from your cart"
+                ></i>
+              </button>
+              <button class="button button-edit">
+                <i
+                  class="fa-solid fa-pen-to-square fa-xl"
+                  aria-label="Edit your ingredients"
+                ></i>
+              </button>
+            </span>
+          </section>
+          <hr />
+          <section class="cart__product">
+            <div class="image-container">
+              <img
+                src="../../assets/all-products-main-images/products-lists-images/plant-base/dessert/001-chia-pudding.jpeg"
+                alt=""
+              />
+            </div>
+            <section class="product__info">
+              <div>
+                <h2 class="product__name">Chia Pudding with Mixed Berries</h2>
+                <p class="product__detail">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Fuga, velit!
+                </p>
+              </div>
+              <p class="product__price">85 THB</p>
+              <div class="quantity-control">
+                <button class="button" aria-label="Increase product quantity">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <p class="quantity">1</p>
+                <button class="button" aria-label="Decrease  product quantity">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+            <div class="cart__actions">
+              <button class="button button-remove">
+                <i
+                  class="fa-solid fa-trash fa-xl"
+                  aria-label="Remove product from your cart"
+                ></i>
+              </button>
+              <button class="button button-edit">
+                <i
+                  class="fa-solid fa-pen-to-square fa-xl"
+                  aria-label="Edit your ingredients"
+                ></i>
+              </button>
+            </div>
+          </section>
+          <hr />
+        </section>
+        <section class="right-section">
+          <section class="summary">
+            <h2>Order Summary</h2>
+            <section class="summary__details">
+              <div class="wrapper">
+                <span class="text">Sub Total</span>
+                <span class="result">205 THB</span>
+              </div>
+              <div class="wrapper">
+                <span class="text">Discount</span>
+                <span class="result">0 THB</span>
+              </div>
+              <div class="wrapper">
+                <span class="text">Tax</span>
+                <span class="result">0 THB</span>
+              </div>
+              <div class="wrapper">
+                <span class="text">Shipping</span>
+                <span class="result">0 THB</span>
+              </div>
+              <div class="wrapper">
+                <span class="text">Total</span>
+                <span class="result">0 THB</span>
+              </div>
+            </section>
+            <button class="button-checkout">Proceed to Checkout</button>
+          </section>
+          <section class="coupon">
+            <h2>Have a Coupon?</h2>
+            <div class="coupon__input-box">
+              <input type="text" placeholder="Coupon Code" />
+              <button>Apply</button>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
