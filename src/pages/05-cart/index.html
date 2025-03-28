@@ -1,168 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <script
-      src="https://kit.fontawesome.com/b10522ed86.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../../index.css" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cart</title>
+        <script src="https://kit.fontawesome.com/b10522ed86.js" crossorigin="anonymous"></script>
+        <!---------------------- FAVICON ---------------------->
+        <link rel="shortcut icon" href="../../assets/logo-vector-images/001-logo-single.png" type="image/x-icon" />
 
-  <body>
-    <header>
-      <div class="brand">
-        <img
-          src="../../assets/logo-vector-images/logo-navbar.png"
-          alt="brand logo"
-          width="154"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Health Blogs</li>
-          <li>Contact Us</li>
-        </ul>
-      </nav>
-      <div>
-        <i class="fa-solid fa-cart-shopping" aria-label="Shopping cart"></i>
-        <i class="fa-solid fa-bell" aria-label="Notifications"></i>
-        <button>Sign In</button>
-        <button>Sign Up</button>
-      </div>
-    </header>
-    <main class="container">
-      <h1>Your Cart</h1>
-      <div class="layout">
-        <section class="cart">
-          <section class="cart__product">
-            <div class="image-container">
-              <img
-                src="../../assets/all-products-main-images/products-lists-images/clean/savory/001-grilled-lemon herb .jpeg"
-                alt=""
-              />
+        <!---------------------- REMIXICON ---------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+        <link rel="stylesheet" href="../../index.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./header-footer.css" />
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img loading="lazy" src="../../assets/logo-vector-images/logo-navbar.png" alt="" />
+                </a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="ri-home-fill"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">
+                                <i class="ri-restaurant-line"></i>
+                                <span>Products</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#health-blog" class="nav__link">
+                                <i class="ri-dna-fill"></i>
+                                <span>Health Blog</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact-us" class="nav__link">
+                                <i class="ri-phone-fill"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <i class="ri-shopping-cart-fill shopping__cart">
+                        <span class="shopping__cart-badge">7</span>
+                    </i>
+                    <i class="ri-notification-4-fill notification">
+                        <span class="notification-badge">4</span>
+                    </i>
+                    <i class="ri-heart-fill heart">
+                        <span class="heart-badge">12</span>
+                    </i>
+                    <i class="ri-user-fill user"></i>
+                    <a href="#" class="sign-in nav__button">Sign In</a>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <h1>Your Cart</h1>
+            <div class="layout">
+                <section class="cart">
+                    <section class="cart__product">
+                        <div class="product__image">
+                            <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/clean/savory/001-grilled-lemon herb .jpeg" alt="" />
+                        </div>
+                        <div class="mobile-quantity-control">
+                            <button class="button" aria-label="Decrease product quantity">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <p class="quantity">1</p>
+                            <button class="button" aria-label="Increase  product quantity">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <section class="product__info">
+                            <div>
+                                <h2 class="product__name">Grilled Lemon Herb Chicken with Quinoa</h2>
+                                <p class="product__detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, velit!</p>
+                            </div>
+                            <div>
+                                <p class="product__price">120 THB</p>
+                                <span class="mobile__cart__actions">
+                                    <button class="button button-remove">
+                                        <i class="fa-solid fa-trash fa-xl" aria-label="Remove product from your cart"></i>
+                                    </button>
+                                    <button class="button button-edit">
+                                        <i class="fa-solid fa-pen-to-square fa-xl" aria-label="Edit your ingredients"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="button" aria-label="Increase product quantity">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <p class="quantity">1</p>
+                                <button class="button" aria-label="Decrease  product quantity">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </section>
+                        <div class="cart__actions">
+                            <button class="button button-remove">
+                                <i class="fa-solid fa-trash fa-xl" aria-label="Remove product from your cart"></i>
+                            </button>
+                            <button class="button button-edit">
+                                <i class="fa-solid fa-pen-to-square fa-xl" aria-label="Edit your ingredients"></i>
+                            </button>
+                        </div>
+                    </section>
+                    <hr />
+                    <section class="cart__product">
+                        <div class="product__image">
+                            <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/plant-base/dessert/001-chia-pudding.jpeg" alt="" />
+                        </div>
+                        <div class="mobile-quantity-control">
+                            <button class="button" aria-label="Decrease product quantity">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <p class="quantity">1</p>
+                            <button class="button" aria-label="Increase  product quantity">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <section class="product__info">
+                            <div>
+                                <h2 class="product__name">Chia Pudding with Mixed Berries</h2>
+                                <p class="product__detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, velit!</p>
+                            </div>
+                            <div>
+                                <p class="product__price">85 THB</p>
+                                <span class="mobile__cart__actions">
+                                    <button class="button button-remove">
+                                        <i class="fa-solid fa-trash fa-xl" aria-label="Remove product from your cart"></i>
+                                    </button>
+                                    <button class="button button-edit">
+                                        <i class="fa-solid fa-pen-to-square fa-xl" aria-label="Edit your ingredients"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="quantity-control">
+                                <button class="button" aria-label="Decrease product quantity">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <p class="quantity">1</p>
+                                <button class="button" aria-label="Increase  product quantity">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </section>
+                        <div class="cart__actions">
+                            <button class="button button-remove">
+                                <i class="fa-solid fa-trash fa-xl" aria-label="Remove product from your cart"></i>
+                            </button>
+                            <button class="button button-edit">
+                                <i class="fa-solid fa-pen-to-square fa-xl" aria-label="Edit your ingredients"></i>
+                            </button>
+                        </div>
+                    </section>
+                    <hr />
+                </section>
+                <section class="right-section">
+                    <section class="summary">
+                        <h2>Order Summary</h2>
+                        <section class="summary__details">
+                            <div class="wrapper">
+                                <span class="text">Sub Total</span>
+                                <span class="result">205 THB</span>
+                            </div>
+                            <div class="wrapper">
+                                <span class="text">Discount</span>
+                                <span class="result">0 THB</span>
+                            </div>
+                            <div class="wrapper">
+                                <span class="text">Tax</span>
+                                <span class="result">0 THB</span>
+                            </div>
+                            <div class="wrapper">
+                                <span class="text">Shipping</span>
+                                <span class="result">0 THB</span>
+                            </div>
+                            <div class="wrapper">
+                                <span class="text">Total</span>
+                                <span class="result">0 THB</span>
+                            </div>
+                        </section>
+                        <button class="button-checkout">Proceed to Checkout</button>
+                    </section>
+                    <section class="coupon">
+                        <h2>Have a Coupon?</h2>
+                        <div class="coupon__input-box">
+                            <input type="text" placeholder="Coupon Code" />
+                            <button>Apply</button>
+                        </div>
+                    </section>
+                </section>
             </div>
-            <section class="product__info">
-              <div>
-                <h2 class="product__name">
-                  Grilled Lemon Herb Chicken with Quinoa
-                </h2>
-                <p class="product__detail">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fuga, velit!
-                </p>
-              </div>
-              <p class="product__price">120 THB</p>
-              <div class="quantity-control">
-                <button class="button" aria-label="Increase product quantity">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <p class="quantity">1</p>
-                <button class="button" aria-label="Decrease  product quantity">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </section>
-            <span class="cart__actions">
-              <button class="button button-remove">
-                <i
-                  class="fa-solid fa-trash fa-xl"
-                  aria-label="Remove product from your cart"
-                ></i>
-              </button>
-              <button class="button button-edit">
-                <i
-                  class="fa-solid fa-pen-to-square fa-xl"
-                  aria-label="Edit your ingredients"
-                ></i>
-              </button>
-            </span>
-          </section>
-          <hr />
-          <section class="cart__product">
-            <div class="image-container">
-              <img
-                src="../../assets/all-products-main-images/products-lists-images/plant-base/dessert/001-chia-pudding.jpeg"
-                alt=""
-              />
+        </main>
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        <img loading="lazy" src="../../assets/logo-vector-images/logo-footer.png" alt="" />
+                    </a>
+                    <div class="footer__contact">
+                        <a href="#" class="contact__link">
+                            <i class="ri-map-pin-fill"></i>
+                            <span>Bangkok, Thailand</span>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <i class="ri-phone-fill"></i>
+                            <span>+66 5696 6969</span>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <i class="ri-mail-fill"></i>
+                            <span>calnoy@gmail.com</span>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <i class="ri-time-fill"></i>
+                            <span>10:00 - 18:00, Mon - Sat</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">Account</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">View Cart</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">My Order</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Meal Plans</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title">Payments</h3>
+                        <ul class="footer__payment">
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <img loading="lazy" src="https://img.icons8.com/color/480/visa.png" alt="visa" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <img loading="lazy" src="https://img.icons8.com/fluency/240/mastercard.png" alt="mastercard" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">
+                                    <img loading="lazy" src="https://img.icons8.com/color/480/unionpay.png" alt="unionpay" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="footer__title follow">Follow us</h3>
+                        <ul class="footer__social">
+                            <a href="https://www.line.me/th/" target="_blank" class="footer__social-link">
+                                <i class="ri-line-fill"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-pinterest-fill"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <section class="product__info">
-              <div>
-                <h2 class="product__name">Chia Pudding with Mixed Berries</h2>
-                <p class="product__detail">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Fuga, velit!
-                </p>
-              </div>
-              <p class="product__price">85 THB</p>
-              <div class="quantity-control">
-                <button class="button" aria-label="Increase product quantity">
-                  <i class="fa-solid fa-minus"></i>
-                </button>
-                <p class="quantity">1</p>
-                <button class="button" aria-label="Decrease  product quantity">
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-              </div>
-            </section>
-            <div class="cart__actions">
-              <button class="button button-remove">
-                <i
-                  class="fa-solid fa-trash fa-xl"
-                  aria-label="Remove product from your cart"
-                ></i>
-              </button>
-              <button class="button button-edit">
-                <i
-                  class="fa-solid fa-pen-to-square fa-xl"
-                  aria-label="Edit your ingredients"
-                ></i>
-              </button>
-            </div>
-          </section>
-          <hr />
-        </section>
-        <section class="right-section">
-          <section class="summary">
-            <h2>Order Summary</h2>
-            <section class="summary__details">
-              <div class="wrapper">
-                <span class="text">Sub Total</span>
-                <span class="result">205 THB</span>
-              </div>
-              <div class="wrapper">
-                <span class="text">Discount</span>
-                <span class="result">0 THB</span>
-              </div>
-              <div class="wrapper">
-                <span class="text">Tax</span>
-                <span class="result">0 THB</span>
-              </div>
-              <div class="wrapper">
-                <span class="text">Shipping</span>
-                <span class="result">0 THB</span>
-              </div>
-              <div class="wrapper">
-                <span class="text">Total</span>
-                <span class="result">0 THB</span>
-              </div>
-            </section>
-            <button class="button-checkout">Proceed to Checkout</button>
-          </section>
-          <section class="coupon">
-            <h2>Have a Coupon?</h2>
-            <div class="coupon__input-box">
-              <input type="text" placeholder="Coupon Code" />
-              <button>Apply</button>
-            </div>
-          </section>
-        </section>
-      </div>
-    </main>
-  </body>
+        </footer>
+        <div class="footer__info">
+            <span class="footer__copy"> © 2025 CalNoy. All Rights Reserved </span>
+        </div>
+        <script src="./script.js"></script>
+    </body>
 </html>
