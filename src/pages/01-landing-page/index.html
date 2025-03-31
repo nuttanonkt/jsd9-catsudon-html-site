@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------- FAVICON ---------------------->
+    <link rel="shortcut icon" href="../../assets/logo-vector-images/001-logo-single.png" type="image/x-icon">
+
+    <!---------------------- REMIXICON ---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!---------------------- SWIPER CSS ---------------------->
+    <link rel="stylesheet" href="swiper-assets/swiper-bundle.min.css">
+
+    <!---------------------- CSS ---------------------->
+    <link rel="stylesheet" href="style.css">
+
+    <!---------------------- JavaScript ---------------------->
+    <script src="script.js" defer></script>
+
+    <title>Calnoy</title>
+</head>
+
+<body>
+    <!---------------------- HEADER ---------------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../../assets/logo-vector-images/logo-navbar.png" alt="">
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-fill"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../../pages/03-all-products/index.html" class="nav__link">
+                            <i class="ri-restaurant-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#health-blog" class="nav__link">
+                            <i class="ri-dna-fill"></i>
+                            <span>Health Blog</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact-us" class="nav__link">
+                            <i class="ri-phone-fill"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <i class="ri-shopping-cart-fill shopping__cart">
+                    <span class="shopping__cart-badge">7</span>
+                </i>
+                <i class="ri-notification-4-fill notification">
+                    <span class="notification-badge">4</span>
+                </i>
+                <i class="ri-heart-fill heart">
+                    <span class="heart-badge">12</span>
+                </i>
+                <i class="ri-user-fill user" onclick="window.location.href='../../pages/02-sign-in-sign-up/index.html';"></i>
+                <a href="../../pages/02-sign-in-sign-up/index.html" class="sign-in nav__button">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------------- MAIN ---------------------->
+    <main class="main">
+        <!---------------------- HOME ---------------------->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__date">
+                    <h1 class="home__title">
+                        <span class="title__fresh">Fresh & Healthy</span>
+                        <br>
+                        <span class="title__with">With</span>
+                        <span class="title__great">Great Taste</span>
+                    </h1>
+
+                    <p class="home__description">
+                        CalNoy – Seamless Clean Eating, Tailored for You. Eat smarter with personalized menus, precise calorie tracking, 
+                        and effortless ordering—all designed for your lifestyle. Get complete nutrition insights and fresh, wholesome meals 
+                        delivered to your door, making clean eating easier and more accessible than ever.
+                    </p>
+                    
+                    <div class="home__search">
+                        <button class="button">Calorie Calculator</button>
+                        
+                        <form action="" class="search" id="search-bar">
+                            <input type="search" placeholder="Search your menu..." name="q" class="search__input">
+                        
+                            <div class="search__button" id="search-button">
+                                <i class="ri-search-line search__icon"></i>
+                                <i class="ri-close-line search__close"></i>
+                            </div>
+                        </form>
+                    </div>
+                
+
+                    <div class="home__category-ratings swiper">
+                        <div class="food__types swiper-wrapper">
+                            <article class="type clean__eating swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Clean Eating</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>3.98</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type keto__diet swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Keto Diet</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>3.25</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type vegetarian swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Vegetarian</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.98</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type vegan swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Vegan</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.45</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type plant__based swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Plant Based</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.35</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type gluten__free swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Gluten Free</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.28</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type low__carb swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">Low Carb</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.58</span>
+                                </div>
+                            </article>
+                    
+                            <article class="type high__protein swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                                <div class="type__image">
+                                    <img src="../../assets/logo-vector-images/002-vector.png" class="food__type-image">
+                                </div>
+                    
+                                <p class="home__type-description">High-Protein</p>
+                    
+                                <div class="star__ratings">
+                                    <i class="ri-star-fill"></i>
+                                    <span>4.86</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__main-images swiper">
+                        <div class="slider__text-content">
+                            <i class="ri-shield-star-fill shield__star"></i>
+                            <div class="slider__description">
+                                <p>Show Top-Rated foods</p>
+                                <i class="ri-arrow-right-up-line"></i>
+                            </div>
+                        </div>
+                        <div class="main__images swiper-wrapper">
+                            <img src="../../assets/header-images/main-images/001-main.webp" class="swiper-slide">
+                            <img src="../../assets/header-images/main-images/002-main.jpeg" class="swiper-slide">
+                            <img src="../../assets/header-images/main-images/003-main.jpeg" class="swiper-slide">
+                            <img src="../../assets/header-images/main-images/004-main.jpeg" class="swiper-slide">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="home__ratings">
+                        <p class="ratings__description">3,500+ Ratings</p>
+                        <div class="ratings__stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="home__secondary-images">
+                        <div class="secondary__image swiper">
+                            <div class="swiper-wrapper">
+                                <img src="../../assets/header-images/secondary-images/001-secondary.jpeg" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/002-secondary.avif" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/003-secondary.webp" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/004-secondary.jpeg" class="swiper-slide">
+                            </div>
+                        </div>
+                    
+                        <div class="secondary__image swiper">
+                            <div class="swiper-wrapper">
+                                <img src="../../assets/header-images/secondary-images/005-secondary.jpeg" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/006-secondary.jpeg" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/007-secondary.webp" class="swiper-slide">
+                                <img src="../../assets/header-images/secondary-images/008-secondary.webp" class="swiper-slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- SHOP CATEGORY ---------------------->
+        <section class="shop__category section" id="shop-category">
+            <div class="shop__category-container container grid">
+                <div class="shop__category-heading">
+                    <div class="shop__category-title">
+                        <h2>Shop By Category</h2>
+                    </div>
+        
+                    <div class="shop__category-btn">
+                        <div class="button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper -->
+                <div class="category swiper">
+                    <div class="category__cards swiper-wrapper">
+                        <article class="clean__eating-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/clean/savory/001-grilled-lemon herb .jpeg">
+                            <p>Clean Eating</p>
+                        </article>
+        
+                        <article class="keto__diet-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/keto/savory/001-keto-grilled-steak.jpeg">
+                            <p>Keto Diet</p>
+                        </article>
+        
+                        <article class="vegetarian-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/vegetatian/savory/001-grilled-vegetable.jpeg">
+                            <p>Vegetarian</p>
+                        </article>
+        
+                        <article class="vegan-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/vegan/savory/001-spicy-vegan-tacos.jpeg">
+                            <p>Vegan</p>
+                        </article>
+        
+                        <article class="plant__based-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/plant-base/savory/001-quinoa-salad.jpeg">
+                            <p>Plant Based</p>
+                        </article>
+        
+                        <article class="gluten__free-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/lowcrab/savory/002-zucchini-noodles.jpeg">
+                            <p>Gluten Free</p>
+                        </article>
+        
+                        <article class="low__carb-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/lowcrab/savory/001-paleo-chicken.jpeg">
+                            <p>Low Carb</p>
+                        </article>
+        
+                        <article class="high__protein-card card swiper-slide" onclick="window.location.href='../../pages/03-all-products/index.html';">
+                            <img
+                                src="../../assets/all-products-main-images/products-lists-images/lowcrab/savory/003-grilled-lamb-chops.jpeg">
+                            <p>High Protein</p>
+                        </article>
+                    </div>
+                    <div class="category-pagination swiper-pagination"></div>
+                </div>
+        
+                <!-- Promotions -->
+                <div class="shop__promo-cards">
+                    <div class="shop__promo-card">
+                        <div class="everyday shop__promo-content">
+                            <p class="shop__promo-title">Everyday fresh & clean with our products</p>
+                            <a href="../03-all-products/index.html" class="shop__promo-button">
+                                <i class="ri-shopping-bag-3-line"></i>
+                                Shop Now
+                            </a>
+                        </div>
+                        <img src="../../assets/category-images/001-category.jpeg">
+                    </div>
+                
+                    <div class="shop__promo-card">
+                        <div class="make shop__promo-content">
+                            <p class="shop__promo-title">Make your breakfast healthy and easy</p>
+                            <a href="../03-all-products/index.html" class="shop__promo-button">
+                                <i class="ri-shopping-bag-3-line"></i>
+                                Shop Now
+                            </a>
+                        </div>
+                        <img src="../../assets/category-images/002-category.avif">
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <!---------------------- FARM FRESH PRODUCTS ---------------------->
+        <section class="farm-fresh__products section" id="farm-fresh-products">
+            <div class="farm-fresh__container container grid">
+                <div class="farm-fresh__heading">
+                    <h2 class="farm-fresh__title">Farm fresh products</h2>
+        
+                    <div class="farm-fresh__categories">
+                        <ul class="farm-fresh__list">
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link all__products">AllProducts</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Clean Eating</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Keto Diet</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Vegetarian</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Vegan</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Plant Based</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Gluten Free</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">Low Carb</a>
+                            </li>
+                            <li class="farm-fresh__item">
+                                <a href="../../pages/03-all-products/index.html" class="farm-fresh__link">High Protein</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="farm-fresh__cards swiper">
+                    <div class="card swiper-wrapper">
+                        <article class="clean__eating-card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">Hot</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/clean/savory/002-roasted salmon.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Avocado</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Salmon</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Tmatoes</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Clean Eating</p>
+                                <h3 class="card__title">Roasted Salmon with Avocado Salsa</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+
+                            
+                        </article>
+
+                        <article class="keto-diet__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">Hot</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/keto/savory/002-bacon-wrapped.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Avocado</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Bacon</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Unsalted butter</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Keto Diet</p>
+                                <h3 class="card__title">Bacon-Wrapped Avocado with Garlic Butter</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+
+                            
+                        </article>
+
+                        <article class="vegetarian-card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">Hot</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/vegetatian/savory/002-vegan-buddha.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Cooked quinoa</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Hummus</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Tahini</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Vegetarian</p>
+                                <h3 class="card__title">Vegan Buddha Bowl</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class=">vegan__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">Hot</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/vegan/savory/002-vegan-bbq.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Purpose flour</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Cauliflower</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Cornstarch</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Vegan</p>
+                                <h3 class="card__title">Vegan BBQ Cauliflower Wings</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="plant-based__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">10% off</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/plant-base/savory/002-plant-based-lentil.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Carrots</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Lentils</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Onion</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Plant Based</p>
+                                <h3 class="card__title">Plant-Based Lentil Soup</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="low-carb__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">10% off</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/lowcrab/savory/002-zucchini-noodles.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Chicken breast</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Fresh basil leaves</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Zucchini</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Low Carb</p>
+                                <h3 class="card__title">Zucchini Noodles with Pesto and Chicken</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="gluten-free__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">New</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/lowcrab/savory/003-grilled-lamb-chops.jpeg" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Bell peppers</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Quinoa</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Mozzarella cheese</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">Gluten Free</p>
+                                <h3 class="card__title">Quinoa-Stuffed Bell Peppers</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="high-protein__card card__wrapper swiper-slide" onclick="window.location.href='../../pages/04-product-detail/index.html';">
+                            <div class="card__header">
+                                <a href="../../pages/04-product-detail/index.html" class="card__label">New</a>
+                                <i class="ri-heart-fill heart"></i>
+                            </div>
+
+                            <img src="../../assets/all-products-main-images/products-lists-images/gluten-free/savory/001-gluten-free-chicken.png" class="card__image">
+                        
+                            <div class="card__tags">
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Avocado</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Tuna in olive oil</a>
+                                <a href="../../pages/03-all-products/index.html" class="card__tag">Leafy greens</a>
+                            </div>
+                        
+                            <div class="card__content">
+                                <p class="card__category">High Protein</p>
+                                <h3 class="card__title">Tuna Salad with Avocado and Chia</h3>
+                        
+                                <div class="card__ratings">
+                                    <div class="card__ratings-star">
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-fill card__star"></i>
+                                        <i class="ri-star-line card__star"></i>
+                                    </div>
+                                
+                                    <div class="card__rating-score">
+                                        <span>(4.5)</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="card__price">
+                                    <p class="card__price-value">159.00 THB</p>
+                                    <i class="ri-shopping-bag-3-line card__cart-icon"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- SHIPPING ---------------------->
+        <section class="shipping section" id="shipping">
+            <div class="shipping__info container">
+                <div class="shipping__content">
+                    <div>
+                        <h3 class="shipping__title">We ship on the following day from 10:00 AM to 08:00 PM</h3>
+                        <p class="shipping__condition">For Purchases over 20 THB</p>
+                        <a href="../03-all-products/index.html" class="shop__shipping-btn">
+                            <i class="ri-shopping-bag-3-line"></i>
+                            Shop Now
+                        </a>
+                    </div>
+                    <img src="../../assets/logo-vector-images/001-vector.png" class="shipping__image">
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- FRESH & FLAVORFUL ---------------------->
+        <section class="fresh__flavorful section" id="fresh-flavorful">
+            <div class="fresh-flavorful__container container">
+                <h2 class="fresh-flavorful__heading">Fresh & Flavorful organic goods</h2>
+
+                <div class="fresh-flavorful__info">
+                    <div class="fresh-flavorful__images swiper">
+                        <article class="fresh-flavorful__image swiper-wrapper">
+                            <img src="../../assets/fresh-flavorful-images/001-fresh-flavoful.jpeg" class="swiper-slide">
+                            <img src="../../assets/fresh-flavorful-images/002-fresh-flavoful.webp" class="swiper-slide">
+                        </article>
+                    </div>
+
+                    <div class="fresh-flavorful__contents">
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Healthy Cruciferous
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Cruciferous vegetables belong to the Brassicaceae family and include vegetables such as broccoli,
+                                    cauliflower, cabbage, Brussels sprouts, kale, and others.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Fresh Root Vegetables
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Root vegetables like carrots, sweet potatoes, and beets are rich in nutrients and fiber, promoting digestion 
+                                    and overall health. They're perfect for clean eating.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Dry Fruits & Nuts
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Dry fruits and nuts are energy-packed, rich in healthy fats and protein. They aid muscle growth, support 
+                                    heart health, and provide essential vitamins and minerals for overall well-being.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Organic Vegetables
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Organic vegetables are grown without synthetic chemicals, offering better nutrition and being healthier 
+                                    for both you and the environment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Natural Citrus Fruits
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Citrus fruits like oranges, lemons, and limes are rich in vitamin C, antioxidants, and fiber, 
+                                    supporting immune health and digestion.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="fresh-flavorful__item">
+                            <div class="fresh-flavorful__header">
+                                <h2 class="section__title">
+                                    Healthy Leafy Green
+                                </h2>
+
+                                <div class="fresh-flavorful__arrow">
+                                    <i class="ri-arrow-down-s-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="section__content">
+                                <p class="section__description">
+                                    Leafy greens are rich in vitamins, minerals, and antioxidants, supporting digestion and immunity. 
+                                    Examples include spinach and kale.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- CLIENT REVIEW ---------------------->
+        <section class="client-review section" id="client-review">
+            <div class="client-review__container container">
+                <div class="client-review__wrapper swiper">
+                    <div class="client-review__content swiper-wrapper">
+                        <article class="client-review__card swiper-slide">
+                            <div class="client-review__ratings">
+                                <div class="client-review__stars">
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-line card__star"></i>
+                                </div>
+                    
+                                <div class="client-review__score">
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                    
+                            <div class="client-review__text">
+                                <p>“I love shopping at this grocery store! The wide variety of fresh produce
+                                    and friendly staff make every visit enjoyable and convenient.”</p>
+                            </div>
+                    
+                            <div class="client-review__user">
+                                <img src="../../assets/user-images/001-user.jpeg">
+                                <p class="client-review__username">Isabella Carter</p>
+                            </div>
+                        </article>
+                    
+                        <article class="client-review__card swiper-slide">
+                            <div class="client-review__ratings">
+                                <div class="client-review__stars">
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-line card__star"></i>
+                                </div>
+                    
+                                <div class="client-review__score">
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                    
+                            <div class="client-review__text">
+                                <p>“I love shopping at this grocery store! The wide variety of fresh produce
+                                    and friendly staff make every visit enjoyable and convenient.”</p>
+                            </div>
+                    
+                            <div class="client-review__user">
+                                <img src="../../assets/user-images/002-user.jpeg">
+                                <p class="client-review__username">Olivia Collins</p>
+                            </div>
+                        </article>
+                    
+                        <article class="client-review__card swiper-slide">
+                            <div class="client-review__ratings">
+                                <div class="client-review__stars">
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-line card__star"></i>
+                                </div>
+                    
+                                <div class="client-review__score">
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                    
+                            <div class="client-review__text">
+                                <p>“I love shopping at this grocery store! The wide variety of fresh produce
+                                    and friendly staff make every visit enjoyable and convenient.”</p>
+                            </div>
+                    
+                            <div class="client-review__user">
+                                <img src="../../assets/user-images/003-user.jpeg">
+                                <p class="client-review__username">Liam Anderson</p>
+                            </div>
+                        </article>
+
+                        <article class="client-review__card swiper-slide">
+                            <div class="client-review__ratings">
+                                <div class="client-review__stars">
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-line card__star"></i>
+                                </div>
+                    
+                                <div class="client-review__score">
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                    
+                            <div class="client-review__text">
+                                <p>“I love shopping at this grocery store! The wide variety of fresh produce
+                                    and friendly staff make every visit enjoyable and convenient.”</p>
+                            </div>
+                    
+                            <div class="client-review__user">
+                                <img src="../../assets/user-images/004-user.webp">
+                                <p class="client-review__username">Benjamin Harris</p>
+                            </div>
+                        </article>
+
+                        <article class="client-review__card swiper-slide">
+                            <div class="client-review__ratings">
+                                <div class="client-review__stars">
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-fill card__star"></i>
+                                    <i class="ri-star-line card__star"></i>
+                                </div>
+                    
+                                <div class="client-review__score">
+                                    <span>(4.5)</span>
+                                </div>
+                            </div>
+                    
+                            <div class="client-review__text">
+                                <p>“I love shopping at this grocery store! The wide variety of fresh produce
+                                    and friendly staff make every visit enjoyable and convenient.”</p>
+                            </div>
+                    
+                            <div class="client-review__user">
+                                <img src="../../assets/user-images/005-user.webp">
+                                <p class="client-review__username">Alexander Miller</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <!---------------------- FOOTER ---------------------->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="../../assets/logo-vector-images/logo-footer.png" alt="">
+                </a>
+
+                <div class="footer__contact">
+                    <a href="#" class="contact__link">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Bangkok, Thailand</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-phone-fill"></i>
+                        <span>+66 5696 6969</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-mail-fill"></i>
+                        <span>calnoy@gmail.com</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-time-fill"></i>
+                        <span>10:00 - 18:00, Mon - Sat</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Account</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">View Cart</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">My Order</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Meal Plans</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Help</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Payments</h3>
+
+                    <ul class="footer__payment">
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/color/480/visa.png" alt="visa" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/fluency/240/mastercard.png" alt="mastercard" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/color/480/unionpay.png" alt="unionpay" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title follow">Follow us</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.line.me/th/" target="_blank" class="footer__social-link">
+                            <i class="ri-line-fill"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-pinterest-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__info">
+        <span class="footer__copy">
+            © 2025 CalNoy. All Rights Reserved
+        </span>
+    </div>
+
+    <!---------------------- SWIPER JAVASCRIPT ---------------------->
+    <script src="swiper-assets/swiper-bundle.min.js"></script>
+</body>
+
+</html>
