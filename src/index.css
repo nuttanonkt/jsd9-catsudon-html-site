@@ -9,12 +9,13 @@
   --dark-color: #0d0c0b;
   --dark-grey-color: #262626;
   --grey-color: #484848;
+  --light-grey-color: #f0efed; /* new added */
   --light-color: #ededee;
   --white-color: #ffffff;
   --pฺrimary-background-color: #cff2cf;
   --secondary-background-color: #f2cb9b;
-  /* font and typography */
 
+  /* font and typography */
   --body-font: "Poppins", sans-serif;
   --heading01-font-size: 4.75rem; /*76px*/
   --heading02-font-size: 3rem; /*48px*/
@@ -30,6 +31,15 @@
   --medium-weight: 500;
   --semibold-weight: 600;
   --bold-weight: 700;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu</title>
+        <link rel="shortcut icon" href="../../assets/logo-vector-images/001-logo-single.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+        <link rel="stylesheet" href="allproduct.css" />
+        <link rel="stylesheet" href="headfoot.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div>
+            <div class="m-5 p-4">
+                <header class="header" id="header">
+                    <nav class="nav container">
+                        <a href="../01-landing-page/index.html" class="nav__logo">
+                            <img src="../../assets/logo-vector-images/logo-navbar.png" alt="" />
+                        </a>
+
+                        <div class="nav__menu">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="../01-landing-page/index.html" class="nav__link">
+                                        <i class="ri-home-fill"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav__item">
+                                    <a href="#products" class="nav__link">
+                                        <i class="ri-restaurant-line"></i>
+                                        <span>Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav__item">
+                                    <a href="#health-blog" class="nav__link">
+                                        <i class="ri-dna-fill"></i>
+                                        <span>Health Blog</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav__item">
+                                    <a href="#contact-us" class="nav__link">
+                                        <i class="ri-phone-fill"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <i class="ri-shopping-cart-fill shopping__cart" onclick="window.location.href='../../pages/05-cart/index.html';">
+                                <span class="shopping__cart-badge">7</span>
+                            </i>
+                            <i class="ri-notification-4-fill notification">
+                                <span class="notification-badge">4</span>
+                            </i>
+                            <i class="ri-heart-fill heart">
+                                <span class="heart-badge">12</span>
+                            </i>
+                            <i class="ri-user-fill user" onclick="window.location.href='../../pages/02-sign-in-sign-up/index.html';"></i>
+                            <a href="../02-sign-in-sign-up/index.html" class="sign-in nav__button">Sign In</a>
+                        </div>
+                    </nav>
+                </header>
+                <section class="space"></section>
+                <section>
+                    <div class="flex flex-row justify-between">
+                        <div class="flex flex-cols-3 justify-center items-center">
+                            <img src="../../assets/logo-vector-images/home.png" class="object-cover w-4 h-4" alt="" />
+                            <img src="../../assets/logo-vector-images/next.png" class="object-cover w-4 h-4" alt="" />
+                            <h2>Menu</h2>
+                        </div>
+                        <div class="flex flex-row justify-between items-center gap-2">
+                            <img src="../../assets/logo-vector-images/calories-calculator.png" class="object-cover w-8 h-8" alt="" />
+                            <img src="../../assets/logo-vector-images/search.png" class="object-cover w-8 h-8" alt="" />
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center py-4">
+                        <img loading="lazy" src="../../assets/all-products-main-images/products-main-images/001-product-main.jpeg" class="w-[70%] h-[200px] object-cover rounded-l" alt="" />
+                    </div>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-4">
+                        <div class="grid grid-col justify-center items-center">
+                            <img loading="lazy" src="../../assets/logo-vector-images/003-vector.png" class="object-cover w-20 h-20" alt="" />
+                            <p class="text-center text-[#262626] font-semibold">Keto</p>
+                        </div>
+                        <div class="grid grid-col justify-center items-center">
+                            <img loading="lazy" src="../../assets/logo-vector-images/001-vector.png" class="object-cover w-20 h-20" alt="" />
+                            <p class="text-center text-[#262626] font-semibold">High-Protein</p>
+                        </div>
+                        <div class="grid grid-col justify-center items-center">
+                            <img loading="lazy" src="../../assets/logo-vector-images/001-vector.png" class="object-cover w-20 h-20" alt="" />
+                            <p class="text-center text-[#262626] font-semibold">Gluten-Free</p>
+                        </div>
+                        <div class="hidden md:grid grid-col justify-center items-center">
+                            <img loading="lazy" src="../../assets/logo-vector-images/004-vector.png" class="object-cover w-20 h-20 hiddenIcon" alt="" />
+                            <p class="text-center text-[#262626] font-semibold">Vegan</p>
+                        </div>
+                        <div class="hidden md:grid grid-col justify-center items-center">
+                            <img loading="lazy" src="../../assets/logo-vector-images/002-vector.png" class="object-cover w-20 h-20 hiddenIcon" alt="" />
+                            <p class="text-center text-[#262626] font-semibold">Vegetarian</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt-4">
+                    <div class="text-[3rem] font-bold py-3">Menu</div>
+                    <div class="md:flex flex-row">
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img
+                                        loading="lazy"
+                                        src="../../assets/all-products-main-images/products-lists-images/clean/savory/001-grilled-lemon herb .jpeg"
+                                        alt=""
+                                        class="rounded-t-xl"
+                                        onclick="window.location.href='../../pages/04-product-detail/index.html';"
+                                    />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Grilled Lemon Herb Chicken with Quinoa</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">20 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">500 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">45 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">40 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">35 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Clean</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/clean/savory/002-roasted salmon.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Roasted Salmon with Avocado Salsa</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">143 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">600 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">45 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">40 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">12 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Clean</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/clean/savory/003-thai-green curry.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Thai Spicy Green Curry Salmon with Tofu</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">20 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">450 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">20 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">35 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">15 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Clean</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/keto/savory/001-keto-grilled-steak.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Keto Grilled Steak with Cauliflower Mash</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">324 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">600 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">50 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">45 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">12 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Keto Diet</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/keto/savory/002-bacon-wrapped.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Bacon-Wrapped Avocado with Garlic</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">20 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">400 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">12 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">35 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">5 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Keto Diet</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/keto/savory/003-zucchini-lasagna.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 h-20 xl:h-full text-[1.5rem] px-1 font-bold text-[#484848]">Zucchini Lasagna</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">564 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">450 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">35 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">30 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">12 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Keto Diet</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/vegan/savory/001-spicy-vegan-tacos.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Spicy Vegan Tacos with Tempeh</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">223 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">280 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">14 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">10 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">35 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Vegan</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/vegan/savory/002-vegan-bbq.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 lg:h-20 xl:h-full text-[1.5rem] px-1 font-bold text-[#484848]">Vegan BBQ Cauliflower Wings</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">20 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">250 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">5 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">8 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">30 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Vegan</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                            <figure class="flex flex-col bg-[#f2cb9b] rounded-xl">
+                                <div>
+                                    <img loading="lazy" src="../../assets/all-products-main-images/products-lists-images/vegan/savory/003-vegan-buddha.jpeg" alt="" class="rounded-t-xl" />
+                                </div>
+                                <div class="flex flex-col gap-y-2 rounded-xl bg-[#f2cb9b]">
+                                    <h3 class="py-1 text-[1.5rem] px-1 font-bold text-[#484848]">Vegan Buddha Bowl with Tahini Dressing</h3>
+                                    <p class="px-1 text-[2.5rem] text-[#262626] font-bold">652 <a class="text-[1rem]">THB</a></p>
+                                    <figcaption class="grid grid-cols-2 grid-rows-2 text-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-1 bg-[#ffffff] py-2 m-1">
+                                        <div class="carbothdrate grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">420 kcal</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Cal</p>
+                                        </div>
+                                        <div class="Total Fat grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">14 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Protein</p>
+                                        </div>
+                                        <div class="Protein grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">18 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Fat</p>
+                                        </div>
+                                        <div class="Fat Saturated grid justify-center">
+                                            <h4 class="text-[1rem] font-bold text-[#262626]">52 g</h4>
+                                            <p class="text-[1rem] text-[#2b8c32] font-bold">Carb</p>
+                                        </div>
+                                    </figcaption>
+                                    <div class="flex flex-wrap gap-2 p-1 m-2">
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Vegan</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Boiled</div>
+                                        <div class="text-[0.75rem] text-red-600 pl-3 pr-3 flex justify-center items-center outline-[1px] outline outline-yellow-600 rounded-2xl gap-4 bg-[#ffffff]">Less than 100 cals</div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="hidden md:block w-[20%]">
+                            <div>
+                                <div class="bg-slate-300 flex flex-col p-4 mx-4 gap-2 rounded-3xl">
+                                    <h3>All Categories</h3>
+                                    <div class="flex flex-col gap-1 text-[0.75rem]">
+                                        <p>Keto Diet (74)</p>
+
+                                        <p>Clean Eating (87)</p>
+
+                                        <p>Vegan (196)</p>
+
+                                        <p>Vegetarian (79)</p>
+
+                                        <p>Plant-based (196)</p>
+
+                                        <p>High-Protein (211)</p>
+
+                                        <p>Drinks (354)</p>
+
+                                        <p>Gluten-Free (193)</p>
+
+                                        <p>Grain Free (28)</p>
+
+                                        <p>Meat (18)</p>
+
+                                        <p>Low Carb (2)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="footer__container container grid">
+                        <div>
+                            <a href="#" class="footer__logo">
+                                <img loading="lazy" src="../../assets/logo-vector-images/logo-footer.png" alt="" />
+                            </a>
+
+                            <div class="footer__contact">
+                                <a href="#" class="contact__link">
+                                    <i class="ri-map-pin-fill"></i>
+                                    <span>Bangkok, Thailand</span>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="ri-phone-fill"></i>
+                                    <span>+66 5696 6969</span>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="ri-mail-fill"></i>
+                                    <span>calnoy@gmail.com</span>
+                                </a>
+
+                                <a href="#" class="contact__link">
+                                    <i class="ri-time-fill"></i>
+                                    <span>10:00 - 18:00, Mon - Sat</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer__content">
+                            <div>
+                                <h3 class="footer__title">Account</h3>
+
+                                <ul class="footer__links">
+                                    <li>
+                                        <a href="#" class="footer__link">View Cart</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">My Order</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">Meal Plans</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="footer__title">Company</h3>
+
+                                <ul class="footer__links">
+                                    <li>
+                                        <a href="#" class="footer__link">About Us</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">Privacy Policy</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">Terms & Conditions</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="footer__title">Payments</h3>
+
+                                <ul class="footer__payment">
+                                    <li>
+                                        <a href="#" class="footer__link">
+                                            <img src="https://img.icons8.com/color/480/visa.png" alt="visa" />
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">
+                                            <img src="https://img.icons8.com/fluency/240/mastercard.png" alt="mastercard" />
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="footer__link">
+                                            <img src="https://img.icons8.com/color/480/unionpay.png" alt="unionpay" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="footer__title follow">Follow us</h3>
+
+                                <ul class="footer__social">
+                                    <a href="https://www.line.me/th/" target="_blank" class="footer__social-link">
+                                        <i class="ri-line-fill"></i>
+                                    </a>
+
+                                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+
+                                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                        <i class="ri-instagram-fill"></i>
+                                    </a>
+
+                                    <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                                        <i class="ri-pinterest-fill"></i>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="footer__info">
+                    <span class="footer__copy"> © 2025 CalNoy. All Rights Reserved </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
