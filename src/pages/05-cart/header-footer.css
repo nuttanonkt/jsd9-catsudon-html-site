@@ -37,9 +37,10 @@ button {
 .header {
     position: sticky;
     top: 0;
-    left: 0;
+    left: 0rem;
     width: 100%;
     background: var(--white-color);
+    padding: 0 2rem;
     z-index: 100;
 }
 
