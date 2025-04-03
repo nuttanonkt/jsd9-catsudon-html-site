@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+     <!---------------------- FAVICON ---------------------->
+     <link rel="shortcut icon" href="../../assets/logo-vector-images/001-logo-single.png" type="image/x-icon">
+
+     <!---------------------- REMIXICON ---------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../../assets/logo-vector-images/logo-navbar.png" alt="">
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-fill"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">
+                            <i class="ri-restaurant-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#health-blog" class="nav__link">
+                            <i class="ri-dna-fill"></i>
+                            <span>Health Blog</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact-us" class="nav__link">
+                            <i class="ri-phone-fill"></i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Change Button -->
+            <!-- <i class="ri-moon-fill change__theme" id="change-theme"></i> -->
+
+            <div class="buttons">
+                <i class="ri-shopping-cart-fill shopping__cart">
+                    <span class="shopping__cart-badge">7</span>
+                </i>
+                <i class="ri-notification-4-fill notification">
+                    <span class="notification-badge">4</span>
+                </i>
+                <i class="ri-heart-fill heart">
+                    <span class="heart-badge">12</span>
+                </i>
+                <i class="ri-user-fill user"></i>
+                <a href="#" class="sign-in nav__button">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <section class="checkout section">
+            <h1 class="section__title">Checkout</h1>
+            <div class="checkout__container grid">
+                <div class="checkout__details">
+                    <div class="checkout__delivery">
+                        <h2 class="checkout__subtitle">Delivery address</h2>
+                        <div class="checkout__address-info">
+                            <p>สุภาพ ร รักไทย</p>
+                            <p>98/7 หมู่ 5 ตำบล สุ เทพ อำเภอ เมือง เชียงใหม่</p>
+                            <p>จังหวัด เชียงใหม่ 50200</p>
+                            <button class="button button--sm">change</button>
+                        </div>
+                    </div>
+                    <div class="checkout__payment">
+                        <h2 class="checkout__subtitle">Payment Method</h2>
+                        <div class="checkout__payment-options">
+                            <button class="button button--payment">QR Promptpay</button>
+                            <button class="button button--payment">Mobile Banking</button>
+                            <button class="button button--payment">Cash on Delivery</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__summary">
+                    <div class="checkout__order-summary">
+                        <h2 class="checkout__subtitle">Order Summary</h2>
+                        <div class="checkout__summary-item">
+                            <span>Sub Total</span>
+                            <span>$ 205</span>
+                        </div>
+                        <div class="checkout__summary-item">
+                            <span>Discount</span>
+                            <span>BO</span>
+                        </div>
+                        <div class="checkout__summary-item">
+                            <span>Tax</span>
+                            <span>BO</span>
+                        </div>
+                        <div class="checkout__summary-item">
+                            <span>Shipping</span>
+                            <span>BO</span>
+                        </div>
+                        <div class="checkout__summary-total">
+                            <span>Total</span>
+                            <span>$ 205</span>
+                        </div>
+                        <button class="button button--primary">Place Order</button>
+                    </div>
+                    <div class="checkout__coupon">
+                        <h2 class="checkout__subtitle">Have a Coupon ?</h2>
+                        <div class="checkout__coupon-form">
+                            <input type="text" placeholder="Coupon Code">
+                            <button class="button button--sm">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    <img src="../../assets/logo-vector-images/logo-footer.png" alt="">
+                </a>
+
+                <div class="footer__contact">
+                    <a href="#" class="contact__link">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Bangkok, Thailand</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-phone-fill"></i>
+                        <span>+66 5696 6969</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-mail-fill"></i>
+                        <span>calnoy@gmail.com</span>
+                    </a>
+
+                    <a href="#" class="contact__link">
+                        <i class="ri-time-fill"></i>
+                        <span>10:00 - 18:00, Mon - Sat</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Account</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">View Cart</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">My Order</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Meal Plans</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Terms & Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Help</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Payments</h3>
+
+                    <ul class="footer__payment">
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/color/480/visa.png" alt="visa" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/fluency/240/mastercard.png" alt="mastercard" />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">
+                                <img src="https://img.icons8.com/color/480/unionpay.png" alt="unionpay" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title follow">Follow us</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.line.me/th/" target="_blank" class="footer__social-link">
+                            <i class="ri-line-fill"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                        <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-pinterest-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__info">
+        <span class="footer__copy">
+            © 2025 CalNoy. All Rights Reserved
+        </span>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
